@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  margin-left: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  width: 368px;
+  height: 25px;
+  margin-bottom: 15px;
+}
+.answers{
+  width: 350px;
+  margin-bottom: 5px;
+  height: 20px;
+}
+input[type="checkbox"]{
+  font-size: 24px;
+}
+
+button {
+  text-align: center;
+  height: 50px;
+  width: 300px;
+  margin-left: 40%;
+}
+
+label {
+	cursor: pointer;
+}

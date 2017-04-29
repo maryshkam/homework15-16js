@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/test.js"></script>
+</head>
+<body>
+<script type="text/template" id="result">
+	<h1><%= title %></h1>
+	<div class="wrapper">
+        <ul>
+            <form>
+                <li><input type="text" class="question" placeholder="Введіть ваше запитання"></li>
+                <ul>
+                    <% for ( var k = 0; k < 4; k++ ) { %>
+                    <li><label for="t<%=k%>"><input id="t<%=k%>"
+                                                    name="question-<%=k%>"
+                                                    type="checkbox" class="rightAnswers" value="<%=k%>">
+                        <input type="text" class="answers" id="d<%=k%>"
+                               placeholder="Введіть вашу відповідь та помітьте правильну відповідь"></label>
+                    </li>
+
+                    <% } %>
+
+                </ul>
+
+                <button class="submit">Записати результат</button>
+            </form>
+        </ul>
+    </div>
+</script>
+</body>
+</html>
